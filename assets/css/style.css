@@ -45,8 +45,8 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1977cc;
-  border-top-color: #d1e6f9;
+  border: 6px solid crimson;
+  border-top-color: rgb(255, 166, 184);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -128,16 +128,14 @@ h6 {
 
 #topbar .contact-info a {
   line-height: 1;
-  color: #444444;
+  color: black;
   transition: 0.3s;
 }
 
-#topbar .contact-info a:hover {
-  color: #1977cc;
-}
+
 
 #topbar .contact-info i {
-  color: #1977cc;
+  color: crimson;
   padding-right: 4px;
   margin-left: 15px;
   line-height: 0;
@@ -148,7 +146,7 @@ h6 {
 }
 
 #topbar .social-links a {
-  color: #437099;
+  color: white;
   padding-left: 15px;
   display: inline-block;
   line-height: 1px;
@@ -156,7 +154,8 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #1977cc;
+  color: rgb(255, 167, 167);
+  
 }
 
 #topbar .social-links a:first-child {
@@ -190,7 +189,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #2c4964;
+  color: #f53a5f;
 }
 
 #header .logo img {
@@ -246,23 +245,19 @@ h6 {
   position: relative;
 }
 
-.navbar>ul>li {
-  position: relative;
-  white-space: nowrap;
-  padding: 8px 0 8px 20px;
-}
-
 .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
-  color: #2c4964;
+  padding: 10px 0 10px 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
   white-space: nowrap;
+  text-transform: uppercase;
   transition: 0.3s;
-  border-bottom: 2px solid #fff;
-  padding: 5px 2px;
 }
 
 .navbar a i,
@@ -276,14 +271,13 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: crimson;
-  border-color: crimson;
+  color: #f53a5f;
 }
 
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 20px;
+  left: 14px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -293,6 +287,7 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
+  border-top: 2px solid crimson;
 }
 
 .navbar .dropdown ul li {
@@ -304,8 +299,7 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #082744;
-  border: none;
+  color: #111;
 }
 
 .navbar .dropdown ul a i {
@@ -315,7 +309,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: crimson;
+  color: #f53a5f;
 }
 
 .navbar .dropdown:hover>ul {
@@ -337,6 +331,15 @@ h6 {
   visibility: visible;
 }
 
+.appointment_btn{
+  background-color: crimson;
+  
+}
+
+.appointment_btn:hover{
+  background-color: #f53a5f;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -351,7 +354,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #2c4964;
+  color: #111;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -380,7 +383,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(28, 47, 65, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -404,22 +407,17 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar-mobile>ul>li {
-  padding: 0;
-}
-
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #2c4964;
-  border: none;
+  color: #111;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: crimson;
+  color: #f53a5f;
 }
 
 .navbar-mobile .getstarted,
@@ -454,95 +452,186 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: crimson;
+  color: #f53a5f;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
-  margin-bottom: -200px;
-}
-
-#hero .container {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
   position: relative;
 }
 
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: crimson;
+#hero .carousel,
+#hero .carousel-inner,
+#hero .carousel-item,
+#hero .carousel-item::before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
-#hero h2 {
-  color: crimson;
-  margin: 10px 0 0 0;
-  font-size: 24px;
+#hero .carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  top: 70px;
+  left: 60px;
+  
+}
+
+#hero .carousel-content {
+  background: rgba(4, 4, 4, 0.7);
+  width: 200px !important;
+  padding: 20px;
+  color: #fff;
+  border-top: 5px solid #f53a5f;
+} 
+/* 
+#hero .carousel-content h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 35px;
-  margin-top: 30px;
-  border-radius: 10px;
+  padding: 12px 32px;
+  border-radius: 4px;
   transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
   color: #fff;
-  background: crimson;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #1bbd36;
 }
 
 #hero .btn-get-started:hover {
-  background:#c50028 !important;
+  background: #1bbd36;
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.6);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
+  background: rgba(231, 18, 18, 0.6);
+  color: rgba(127, 54, 54, 0.8);
+}
+
+#hero .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#hero .carousel-indicators li.active {
+  opacity: 1;
+  background: #1bbd36;
 }
 
 @media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+  #hero .carousel-content {
+    width: 60%;
+  }
+
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 5%;
   }
 }
 
 @media (max-width: 992px) {
-  #hero {
-    margin-bottom: 0;
-    height: 100vh;
+  #hero .carousel-container {
+    top: 58px;
   }
 
-  #hero .container {
-    padding-bottom: 63px;
+  #hero .carousel-content h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
   }
 
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero .carousel-content p {
+    font-size: 15px;
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 500px) {
   #hero {
-    height: 110vh;
+    height: 120vh;
   }
-}
+} */
+
 
 /*--------------------------------------------------------------
 # Sections General
