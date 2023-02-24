@@ -136,8 +136,8 @@ h6 {
 
 #topbar .contact-info i {
   color: crimson;
-  padding-right: 4px;
-  margin-left: 15px;
+  /* padding-right: 4px;
+  margin-left: 15px; */
   line-height: 0;
 }
 
@@ -216,12 +216,12 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 962px) {
   .appointment-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 18px;
+    margin-right: 20px !important;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -489,7 +489,7 @@ h6 {
   align-items: flex-start;
   justify-content: flex-end;
   position: absolute;
-  bottom: 5px;
+  bottom: 85px;
   top: 70px;
   left: 60px;
   right: 60px;
@@ -498,30 +498,15 @@ h6 {
 
 
 #hero .carousel-content {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.751);
   width: auto;
   padding: 20px;
-  padding-bottom: 10px;
   color: #fff;
   border-top: 5px solid #f53a5f;
 } 
 
 
-
-
-/* 
-#hero .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
-}
-
-#hero .carousel-inner .carousel-item,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-  opacity: 0;
-} */
-/*
-#hero .carousel-inner .active,
+/* #hero .carousel-inner .active,
 #hero .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
@@ -534,9 +519,9 @@ h6 {
 #hero .carousel-inner .active.carousel-item-end {
   left: 0;
   transform: translate3d(0, 0, 0);
-}
+} */
 
-#hero .carousel-control-next-icon,
+/* #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
   font-size: 30px;
@@ -558,25 +543,9 @@ h6 {
 #hero .carousel-control-prev-icon:hover {
   background: rgba(231, 18, 18, 0.6);
   color: rgba(127, 54, 54, 0.8);
-}
+} */
+/*
 
-#hero .carousel-indicators li {
-  cursor: pointer;
-  background: #fff;
-  overflow: hidden;
-  border: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-  opacity: 0.6;
-  transition: 0.3s;
-}
-
-#hero .carousel-indicators li.active {
-  opacity: 1;
-  background: #1bbd36;
-}
-*/
 @media (min-width: 1024px) {
   #hero .carousel-content {
     width: 100%;
@@ -587,11 +556,7 @@ h6 {
     width: 5%;
   }
 }
-@media (min-width: 900px) {
- #hero .carousel-container {
-    flex-direction: column-reverse;
-  }
-}
+*/
 
 @media (max-width: 992px) {
   /* #hero .carousel-container {
@@ -616,7 +581,7 @@ h6 {
 } 
 @media (max-height: 768px) {
   .features-box {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
 } 
