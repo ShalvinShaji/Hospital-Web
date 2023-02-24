@@ -642,7 +642,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f1f7fd;
+  background-color: rgb(252, 245, 246);
 }
 
 .section-title {
@@ -747,49 +747,13 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-
-
- .why-us .icon-boxes .icon-box {
-  text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 20px 60px !important;
-  width: 100%;
-  margin-top: 50px !important;
-  cursor: pointer;
-  transition: 0.5s;
-  background-color: crimson !important;
-
-}
-.why-us .icon-boxes .icon-box:hover{
-  background-color: #c50028 !important;
-}
-
-.why-us .icon-boxes .icon-box i {
-  font-size: 20px;
-  color: white;
-}
-
-.why-us .icon-boxes .icon-box h4 {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-/* .why-us .icon-boxes .icon-box p {
-  font-size: 15px;
-  color: #848484;
-}  */
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .icon-boxes h4 {
   font-size: 18px;
-  color: #4b7dab;
+  color: #ab4b70;
   margin-bottom: 15px;
 }
 
@@ -1004,7 +968,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+/* .services .icon-box {
   text-align: center;
   border: 1px solid #d5e1ed;
   padding: 80px 20px;
@@ -1079,7 +1043,7 @@ section {
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Appointments
@@ -1154,7 +1118,7 @@ section {
 .appointment .php-email-form input:focus,
 .appointment .php-email-form textarea:focus,
 .appointment .php-email-form select:focus {
-  border-color: #1977cc;
+  border-color: rgb(163, 163, 163);
 }
 
 .appointment .php-email-form input,
@@ -1167,16 +1131,16 @@ section {
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: crimson;
   border: 0;
   padding: 10px 35px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+  background: rgb(255, 10, 59);
 }
 
 /*--------------------------------------------------------------
