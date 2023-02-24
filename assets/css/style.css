@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: #1977cc;
+  color: crimson;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3291e6;
+  color: #f91845;
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1977cc;
+  background: crimson;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -98,7 +98,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #298ce5;
+  background: rgb(240, 24, 67);
   color: #fff;
 }
 
@@ -1140,7 +1140,7 @@ section {
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: rgb(255, 10, 59);
+  background: #ff0a3b;
 }
 
 /*--------------------------------------------------------------
@@ -1150,28 +1150,31 @@ section {
   overflow: hidden;
 }
 
+.departments .nav-tabs .nav-item{
+  width: 120px;
+}
 .departments .nav-tabs {
   border: 0;
+  margin-bottom: 10px;
 }
 
 .departments .nav-link {
   border: 0;
-  padding: 12px 15px 12px 0;
+  padding: 15px;
   transition: 0.3s;
   color: #2c4964;
-  border-radius: 0;
-  border-right: 2px solid #ebf1f6;
   font-weight: 600;
   font-size: 15px;
 }
 
 .departments .nav-link:hover {
-  color: #1977cc;
+  color: #081a2d;
 }
 
 .departments .nav-link.active {
-  color: #1977cc;
-  border-color: #1977cc;
+  color: white;
+  background-color: crimson;
+  border: none;
 }
 
 .departments .tab-pane.active {
@@ -1198,11 +1201,12 @@ section {
   .departments .nav-link {
     border: 0;
     padding: 15px;
+
   }
 
   .departments .nav-link.active {
     color: #fff;
-    background: #1977cc;
+    background: crimson;
   }
 }
 
@@ -1284,7 +1288,7 @@ section {
   border-radius: 50px;
   width: 32px;
   height: 32px;
-  background: #a0bcd5;
+  background: #d5a0b2;
 }
 
 .doctors .member .social a i {
@@ -1294,99 +1298,18 @@ section {
 }
 
 .doctors .member .social a:hover {
-  background: #1977cc;
+  background: crimson;
 }
 
 .doctors .member .social a+a {
   margin-left: 8px;
 }
 
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq .faq-list {
-  padding: 0 100px;
-}
-
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li+li {
-  margin-top: 15px;
-}
-
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #76b5ee;
-}
-
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #1977cc;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonial-wrap {
+/* .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
 
@@ -1486,7 +1409,7 @@ section {
     position: static;
     left: auto;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Gallery
@@ -1515,11 +1438,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: white;
   float: left;
   width: 44px;
   height: 44px;
-  background: #d6e9fa;
+  background: #d5a0b2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1534,12 +1457,13 @@ section {
   margin-bottom: 5px;
   color: #2c4964;
 }
+/* d5a0b2 */
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #4b7dab;
+  color: #2c4964;
 }
 
 .contact .info .email,
@@ -1550,7 +1474,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1977cc;
+  background: crimson;
   color: #fff;
 }
 
@@ -1579,7 +1503,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: crimson;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1599,7 +1523,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid crimson;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1621,7 +1545,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: crimson;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1630,7 +1554,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+  background: rgb(250, 8, 56);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1657,9 +1581,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
+  color: white;
   font-size: 14px;
-  background: #f1f7fd;
+  background: #262324;
 }
 
 #footer .footer-top {
@@ -1708,7 +1632,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1c84e3;
+  color: crimson;
   font-size: 18px;
   line-height: 1;
 }
@@ -1732,7 +1656,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #1977cc;
+  color: crimson;
 }
 
 #footer .footer-newsletter {
@@ -1746,6 +1670,11 @@ section {
   position: relative;
   padding-bottom: 12px;
 }
+#footer .footer-newsletter p{
+  color: #444444;
+
+}
+
 
 #footer .footer-newsletter form {
   margin-top: 30px;
@@ -1754,13 +1683,14 @@ section {
   position: relative;
   border-radius: 50px;
   text-align: left;
-  border: 1px solid #bfdcf7;
+  border: 1px solid #f7bfbf;
 }
 
 #footer .footer-newsletter form input[type=email] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  outline: none;
 }
 
 #footer .footer-newsletter form input[type=submit] {
@@ -1772,14 +1702,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1977cc;
+  background: crimson;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #1c84e3;
+  background: crimson;
 }
 
 #footer .credits {
@@ -1791,7 +1721,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1977cc;
+  background: crimson;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1804,7 +1734,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #1c84e3;
+  background: rgb(249, 16, 62);
   color: #fff;
   text-decoration: none;
 }
