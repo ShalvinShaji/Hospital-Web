@@ -253,7 +253,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 530;
   color: #111;
   white-space: nowrap;
   text-transform: uppercase;
@@ -296,7 +296,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   text-transform: none;
   color: #111;
@@ -1612,7 +1612,7 @@ section {
   color: #777777;
 }
 
-#footer .footer-top h4 {
+#footer .footer-top h4 ,h3 {
   font-size: 16px;
   font-weight: bold;
   color: #444444;
