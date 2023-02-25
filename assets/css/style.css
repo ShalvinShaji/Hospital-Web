@@ -201,7 +201,7 @@ h6 {
 */
 .appointment-btn {
   margin-left: 25px;
-  background: crimson;
+  background: rgb(44, 35, 37);
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -212,7 +212,7 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: #c50028 !important;
+  background: #ff0033 !important;
   color: #fff;
 }
 
@@ -333,11 +333,18 @@ h6 {
 
 .appointment_btn{
   background-color: crimson;
+  color: white;
+  padding: 6px;
   
 }
 
 .appointment_btn:hover{
-  background-color: #f53a5f;
+  background-color: #f30434;
+  color: white;
+}
+.appointment_btn::before{
+  color: white;
+  background-color: crimson;
 }
 
 @media (max-width: 1366px) {
@@ -1153,18 +1160,18 @@ section {
 .departments .nav-tabs .nav-item{
   width: 120px;
 }
-.departments .nav-tabs {
-  border: 0;
-  margin-bottom: 10px;
-}
+
 
 .departments .nav-link {
-  border: 0;
   padding: 15px;
   transition: 0.3s;
   color: #2c4964;
   font-weight: 600;
   font-size: 15px;
+  background-color: rgb(241, 239, 239);
+  border-radius: 0px !important;
+
+  
 }
 
 .departments .nav-link:hover {
@@ -1174,7 +1181,6 @@ section {
 .departments .nav-link.active {
   color: white;
   background-color: crimson;
-  border: none;
 }
 
 .departments .tab-pane.active {
@@ -1715,7 +1721,7 @@ section {
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+  color: #ffffff;
 }
 
 #footer .social-links a {
