@@ -268,8 +268,6 @@ h6 {
 }
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
 .navbar li:hover>a {
   color: #f53a5f;
 }
@@ -306,11 +304,11 @@ h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
+/* .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
   color: #f53a5f;
-}
+} */
 
 .navbar .dropdown:hover>ul {
   opacity: 1;
