@@ -1864,3 +1864,42 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+.facility{
+  border: 1px solid rgba(38, 38, 38, 0.378);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 20px 0px ;
+  height: 270px;
+}
+
+.facility h3{
+ font-size: 20px;
+
+}
+
+.facility img{
+  height: 100px;
+  width: 100px;
+  padding: 15px;
+  filter:saturate(0)
+ 
+}
+
+ 
+
+
+.facility .facility-description{
+  text-align: center;
+}
