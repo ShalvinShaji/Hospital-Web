@@ -1,16 +1,3 @@
-/**
-   * Hero carousel indicators
-   */
-let heroCarouselIndicators = select("#hero-carousel-indicators")
-let heroCarouselItems = select('#heroCarousel .carousel-item', true)
-
-heroCarouselItems.forEach((item, index) => {
-  (index === 0) ?
-  heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-});
-
-
 
 
 ////////////////////
@@ -85,6 +72,62 @@ heroCarouselItems.forEach((item, index) => {
     })
   }
 
+
+  /**
+   * Fires the scrollto function on click to links .scrollto
+   */
+  let selectScrollto = document.querySelectorAll('.scrollto');
+  selectScrollto.forEach(el => el.addEventListener('click', function(event) {
+    if (document.querySelector(this.hash)) {
+      event.preventDefault();
+
+      let mobileNavActive = document.querySelector('.mobile-nav-active');
+      if (mobileNavActive) {
+        mobileNavActive.classList.remove('mobile-nav-active');
+
+        let navbarToggle = document.querySelector('.mobile-nav-toggle');
+        navbarToggle.classList.toggle('bi-list');
+        navbarToggle.classList.toggle('bi-x');
+      }
+      scrollto(this.hash);
+    }
+  }));
+
+   /**
+   * Mobile nav toggle
+   */
+   const mobileNavToogle = document.querySelector('.mobile-nav-toggle');
+   if (mobileNavToogle) {
+     mobileNavToogle.addEventListener('click', function(event) {
+       event.preventDefault();
+ 
+       document.querySelector('body').classList.toggle('mobile-nav-active');
+ 
+       this.classList.toggle('bi-list');
+       this.classList.toggle('bi-x');
+     });
+   }
+ 
+   /**
+    * Toggle mobile nav dropdowns
+    */
+   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+ 
+   navDropdowns.forEach(el => {
+     el.addEventListener('click', function(event) {
+       if (document.querySelector('.mobile-nav-active')) {
+         event.preventDefault();
+         this.classList.toggle('active');
+         this.nextElementSibling.classList.toggle('dropdown-active');
+ 
+         let dropDownIndicator = this.querySelector('.dropdown-indicator');
+         dropDownIndicator.classList.toggle('bi-chevron-up');
+         dropDownIndicator.classList.toggle('bi-chevron-down');
+       }
+     })
+   });
+ 
+
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
@@ -127,21 +170,21 @@ heroCarouselItems.forEach((item, index) => {
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  // on('click', '.mobile-nav-toggle', function(e) {
+  //   select('#navbar').classList.toggle('navbar-mobile')
+  //   this.classList.toggle('bi-list')
+  //   this.classList.toggle('bi-x')
+  // })
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
+  // /**
+  //  * Mobile nav dropdowns activate
+  //  */
+  // on('click', '.navbar .dropdown > a', function(e) {
+  //   if (select('#navbar').classList.contains('navbar-mobile')) {
+  //     e.preventDefault()
+  //     this.nextElementSibling.classList.toggle('dropdown-active')
+  //   }
+  // }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -171,6 +214,23 @@ heroCarouselItems.forEach((item, index) => {
       }
     }
   });
+
+
+    /**
+   * Auto generate the hero carousel indicators
+   */
+    let heroCarouselIndicators = document.querySelector('#hero .carousel-indicators');
+    if (heroCarouselIndicators) {
+      let heroCarouselItems = document.querySelectorAll('#hero .carousel-item')
+  
+      heroCarouselItems.forEach((item, index) => {
+        if (index === 0) {
+          heroCarouselIndicators.innerHTML += `<li data-bs-target="#hero" data-bs-slide-to="${index}" class="active"></li>`;
+        } else {
+          heroCarouselIndicators.innerHTML += `<li data-bs-target="#hero" data-bs-slide-to="${index}"></li>`;
+        }
+      });
+    }
 
   /**
    * Preloader
