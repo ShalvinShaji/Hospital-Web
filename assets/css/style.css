@@ -1330,7 +1330,7 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 /* .testimonials{
-  background-color: rgba(42, 85, 160, 0.705);
+  background-color: rgba(248, 247, 247, 0.705);
 } */
 
 /* .testimonials .testimonial-wrap {
@@ -1341,7 +1341,7 @@ section {
 .testimonials .testimonials-slider {
   overflow: hidden;
   /* background-color: rgba(202, 202, 202, 0.332); */
-  box-shadow: 0px 2px 12px rgba(152, 152, 153, 0.316);
+  /* box-shadow: 0px 2px 12px rgba(152, 152, 153, 0.316); */
 
   padding: 10px;
 }
@@ -1357,7 +1357,9 @@ section {
   margin: 30px 15px;
   min-height: 200px;
   position: relative;
-  background: #e6e5e55a;
+  /* background: #e6e5e55a; */
+  box-shadow: 0px 2px 12px rgba(152, 152, 153, 0.316);
+
   text-align: start;
   /* border-top-left-radius: 30px; */
   /* border-bottom-right-radius: 30px; */
@@ -1371,7 +1373,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #313131;
 }
 
 .testimonials .testimonial-item h4 {
