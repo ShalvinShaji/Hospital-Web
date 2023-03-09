@@ -37,7 +37,7 @@ h6 {
   --color-links-hover: #1ec3e0;
 
   /* Primay colors */
-  --color-primary: #0ea2bd;
+  --color-primary: crimson;
   --color-primary-light: #1ec3e0;
   --color-primary-dark: #0189a1;
 
@@ -50,49 +50,14 @@ h6 {
   --color-secondary-light: #8f9fae;
   --color-secondary-dark: #3a4753;
 
-  --color-secondary-rgb: 72, 86, 100;
-  --color-secondary-light-rgb: 143, 159, 174;
-  --color-secondary-dark-rgb: 58, 71, 83;
 
-  /* General colors */
-  --color-blue: #0d6efd;
-  --color-blue-rgb: 13, 110, 253;
-
-  --color-indigo: #6610f2;
-  --color-indigo-rgb: 102, 16, 242;
-
-  --color-purple: #6f42c1;
-  --color-purple-rgb: 111, 66, 193;
-
-  --color-pink: #f3268c;
-  --color-pink-rgb: 243, 38, 140;
-
-  --color-red: #df1529;
-  --color-red-rgb: 223, 21, 4;
-
-  --color-orange: #fd7e14;
-  --color-orange-rgb: 253, 126, 20;
-
-  --color-yellow: #ffc107;
-  --color-yellow-rgb: 255, 193, 7;
-
-  --color-green: #059652;
-  --color-green-rgb: 5, 150, 82;
-
-  --color-teal: #20c997;
-  --color-teal-rgb: 32, 201, 151;
-
-  --color-cyan: #0dcaf0;
-  --color-cyan-rgb: 13, 202, 240;
-
+  
   --color-white: #ffffff;
   --color-white-rgb: 255, 255, 255;
 
   --color-gray: #6c757d;
-  --color-gray-rgb: 108, 117, 125;
 
   --color-black: #000000;
-  --color-black-rgb: 0, 0, 0;
   
 }
 
@@ -367,7 +332,7 @@ h6 {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 400;
-    color: rgba(var(--color-secondary-dark-rgb), 0.7);
+    color: var(--color-secondary-dark);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -418,21 +383,21 @@ h6 {
   .navbar .dropdown .active,
   .navbar .dropdown .active:focus,
   .navbar .dropdown:hover>a {
-    color: var(--color-white);
-    background: var(--color-secondary);
+    color: var(--color-secondary-dark);
+    background: var(--color-white);
   }
 
   .navbar .dropdown ul {
     display: block;
     position: absolute;
+    top: 75px;
     left: 0;
-    top: 100%;
     margin: 0;
     padding: 0 0 10px 0;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: var(--color-secondary);
+    background: var(--color-white);
     transition: 0.3s;
   }
 
@@ -445,7 +410,7 @@ h6 {
     font-size: 15px;
     text-transform: none;
     font-weight: 400;
-    color: rgba(var(--color-white-rgb), 0.5);
+    color: var(--color-secondary-dark);
   }
 
   .navbar .dropdown ul a i {
@@ -466,13 +431,14 @@ h6 {
   }
 
   .navbar .megamenu {
-    position: static;
+    position: relative;
   }
 
   .navbar .megamenu ul {
-    right: 0;
+    top: 75px;
     padding: 10px;
     display: flex;
+    transition-duration: .3s;
   }
 
   .navbar .megamenu ul li {
@@ -481,8 +447,8 @@ h6 {
 
   .navbar .megamenu ul li a,
   .navbar .megamenu ul li:hover>a {
-    color: rgba(var(--color-white-rgb), 0.5);
-    background: none;
+    color: var(--color-secondary-dark);
+    background-color: var(--color-white);
   }
 
   .navbar .megamenu ul li a:hover,
@@ -551,7 +517,7 @@ h6 {
     padding: 12px 20px;
     font-size: 20px;
     font-weight: 500;
-    color: black;
+    color: var(--color-secondary-dark);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -567,7 +533,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: black;
+    color: var(--color-primary);
   }
 
   .navbar .dropdown ul,
@@ -577,7 +543,7 @@ h6 {
     padding: 10px 0;
     /* margin: 10px 20px; */
     transition: all 0.5s ease-in-out;
-    border: 1px solid black;
+    border: 1px solid var(--color-secondary-dark);
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -716,7 +682,7 @@ h6 {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(63, 187, 192, 0.8);
+  background: rgba(192, 63, 82, 0.8);
   border-radius: 50px;
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.5);
@@ -729,11 +695,12 @@ h6 {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: #3fbbc0;
+  background: #c03f48;
   color: rgba(255, 255, 255, 0.8);
 }
 
 #hero .carousel-indicators li {
+  
   cursor: pointer;
   background: #fff;
   overflow: hidden;
@@ -747,7 +714,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #3fbbc0;
+  background: #c03f50;
 }
 
 #hero .btn-get-started {
@@ -761,7 +728,7 @@ h6 {
   transition: 0.5s;
   line-height: 1;
   color: #fff;
-  background: #3fbbc0;
+  background: #c03f3f;
 }
 
 #hero .btn-get-started:hover {
@@ -888,7 +855,7 @@ section {
   padding: 20px 0;
   background-color: #f1f7fd;
   min-height: 40px;
-  margin-top: 120px;
+  margin-top: 140px;
 }
 
 @media (max-width: 992px) {
@@ -930,7 +897,12 @@ section {
 }
 
 @media (max-width: 768px) {
-  .breadcrumbs .d-flex {
+
+  .breadcrumbs{
+    margin-top: 140px;
+  }
+
+  /* .breadcrumbs .d-flex {
     display: block !important;
   }
 
@@ -940,7 +912,7 @@ section {
 
   .breadcrumbs ol li {
     display: inline-block;
-  }
+  } */
 }
 
 
@@ -1362,12 +1334,16 @@ section {
 } */
 
 .testimonials .testimonial-wrap {
-  padding-left: 50px;
+  padding: 30px;
 }
 
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
+  background-color: rgba(202, 202, 202, 0.332);
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
+
+  padding: 10px;
 }
 
 .testimonials .testimonial-item {
@@ -1380,9 +1356,8 @@ section {
   padding: 30px 30px 30px 60px;
   margin: 30px 15px;
   min-height: 200px;
-  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
   position: relative;
-  background: #dbdada79;
+  background: #ffffff88;
   text-align: start;
   /* border-top-left-radius: 30px; */
   /* border-bottom-right-radius: 30px; */
@@ -1498,18 +1473,18 @@ section {
 .recent-posts .post-box .meta .post-date {
   font-size: 15px;
   font-weight: 400;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
 }
 
 .recent-posts .post-box .meta .post-author {
   font-size: 15px;
   font-weight: 400;
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
 }
 
 .recent-posts .post-box .post-title {
   font-size: 18px;
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
   font-weight: 700;
   margin: 15px 0 0 0;
   position: relative;
@@ -1536,9 +1511,7 @@ section {
   font-size: 18px;
 }
 
-.recent-posts .post-box:hover .post-title {
-  color: var(--color-primary);
-}
+
 
 .recent-posts .post-box:hover .post-img img {
   transform: scale(1.1);

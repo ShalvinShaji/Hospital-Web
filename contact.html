@@ -33,8 +33,8 @@
 
 <body>
 
-   <!-- ======= Top Bar ======= -->
-   <div id="topbar" class="w-100 d-flex align-items-center fixed-top bg-danger text-white">
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="w-100 d-flex align-items-center fixed-top bg-danger text-white">
     <div class="container d-flex justify-content-between border border-bottom border-danger">
       <div class="contact-info d-flex  align-items-center justify-content-between bg-white ">
         <div class=" topbar_contact p-3  d-none d-lg-block">
@@ -55,58 +55,69 @@
     </div>
   </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+ <!-- ======= Header ======= -->
+ <header id="header" class="header fixed-top" data-scrollto-offset="0">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <h1 class="logo me-auto"><a href="index.html"><span>GM</span>M</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li class="dropdown"><a href="./about.html"><span>About us</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#" class="text-uppercase">History</a></li>
-              <li><a href="#" class="text-uppercase">Administration</a></li>
-            </ul>
-          </li>
-          <li><a href="./facilities.html" class="text-uppercase">Facilities</a></li>
-          <li class="dropdown"><a href="./departments.html"><span>Departments</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="cardiology.html" class="text-uppercase">Cardiology</a></li>
-              <li><a href="Pediatrics.html" class="text-uppercase">Pediatrics</a></li>
-              <li><a href="Orthopedics.html" class="text-uppercase" class="text-uppercase">Orthopedics</a></li>
-              <li><a href="nephrology.html" class="text-uppercase" class="text-uppercase">nephrology</a></li>
-              <li><a href="ENT.html" class="text-uppercase" class="text-uppercase">ENT</a></li>
-              <li><a href="General_Medicine.html" class="text-uppercase" class="text-uppercase">General Medicine</a></li>
-              <li><a href="Community_Medicine.html" class="text-uppercase" class="text-uppercase">Community Medicine</a></li>
-              <li><a href="Emergency_Medicine.html" class="text-uppercase" class="text-uppercase">Emergency Medicine</a></li>
-             
-            </ul>
-          </li>
-          <li><a href="./doctors.html" class="text-uppercase">Doctors</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="./HomeImageGallery.html" class="text-uppercase">Image Gallery</a></li>
-              <li><a href="./VideoGallery.html" class="text-uppercase">Video Gallery</a></li>   
-            </ul>
-          </li>
-          <li><a href="./contact.html">Contact</a></li>
-
-        </ul>
-        <i class="bi bi-list ms-2 mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="ms-4 d-flex">
-        <a href="./appointment.html" class=" appointment_btn rounded p-2 text-uppercase">Appointment</a>
-        
+    <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/logo.jpg" alt="">
+      <div class="hospital-name">
+        <h2 class="text-uppercase">REV. GEORGE MATHEN MISSION HOSPITAL</h2>
+    
+        <h4>Mallappally East, Kerala, India</h4>
       </div>
+   
+        
+    </a>
 
-    </div>
-  </header>
-  <!-- End Header -->
+    <nav id="navbar" class="navbar">
+      <ul>
+
+        
+
+        <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+        <li><a class="nav-link scrollto" href="./about.html">About</a></li>
+               <li class="dropdown megamenu"><a aria-disabled="true"><span>Departments</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li>
+              <a href="./general_medicine.html">genarel medicine</a>
+              <a href="./cardiology.html">Cardiology</a>
+              <a href="./pediatrics.html">Pediatrics</a>
+            </li>
+            <li>
+              <a href="./orthopedics.html">Orthopedics</a>
+              <a href="./nephrology.html">Nephrology</a>
+              <a href="./ent.html">ENT</a>
+            </li>
+            <li>
+              <a href="./emergency_medicine.html">Emergency Medicine</a>
+              <a href="./community_medicine.html">Community Medicine</a>
+              
+            </li>
+            
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="./Facilities.html">facilities</a></li>
+        <li><a class="nav-link scrollto" href="./doctors.html">Doctors</a></li>
+        <li><a class="nav-link scrollto" href="./careers.html">Careers</a></li>
+        <li class="dropdown"><a aria-disabled="true"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="./HomeImageGallery.html">Image gallery</a></li>
+            <li><a href="./HomeVideoGallery.html">Video Gallery</a></li>
+          </ul>
+        </li>
+
+        <li><a class="nav-link scrollto" href="./contact.html">Contact</a></li>
+      </ul>
+    </nav><!-- .navbar -->
+
+    <i class="bi bi-list mobile-nav-toggle d-none"></i>
+    
+
+  </div>
+</header><!-- End Header -->
+
 
   <main id="main">
 
@@ -127,9 +138,77 @@
 
     <section class="inner-page">
       <div class="container">
-        <!-- <p>
-          Example inner page template
-        </p> -->
+        <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact m-0 p-0">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+      </div>
+
+      <div>
+        <iframe  width="100%" height="350px" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.7230635742662!2d76.66237751457722!3d9.445665893232569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b063aeab5b8f6c7%3A0xd86be7f44dd2b9c8!2sRev.%20George%20Mathen%20Mission%20Hospital%2C%20Mallappally!5e0!3m2!1sen!2sin!4v1677327044996!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Mallappally East, Po, Pathanamthitta ,Kerala</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>gmmhospital@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p> 0469-2782262, 8281161330</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
       </div>
     </section>
 
