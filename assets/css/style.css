@@ -871,6 +871,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #2c4964;
+  text-transform: uppercase !important;
 }
 
 .section-title h2::before {
@@ -909,6 +910,9 @@ section {
   margin-top: 140px;
 }
 
+.breadcrumbs h2{
+  display: none;
+}
 @media (max-width: 992px) {
   .breadcrumbs {
     margin-top: 100px;
@@ -2052,6 +2056,9 @@ section {
 
 .facility h3{
  font-size: 20px;
+  display: inline-block !important;
+
+ color:var(--color-secondary-dark)
 
 }
 
