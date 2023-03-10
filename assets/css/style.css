@@ -1339,11 +1339,17 @@ section {
 .doctors .member .pic {
   overflow: hidden;
   width: 180px;
-  border-radius: 10px;
+  height: 220px;
+  object-fit: cover !important;
+
 }
 
 .doctors .member .pic img {
   transition: ease-in-out 0.3s;
+  border-radius: 10px;
+  width: 180px;
+  height: 220px;
+
 }
 
 .doctors .member:hover img {
@@ -1354,6 +1360,7 @@ section {
 
 
 .doctors .member h4 {
+  margin-top: 10px;
   font-weight: 700;
   font-size: 17px;
   color: #2c4964;
