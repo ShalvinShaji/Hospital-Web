@@ -417,8 +417,7 @@
   border-radius: 50%;
  /* background: #0074e4;*/
   opacity: 0.6;
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
+  
 }
 .spiner > *:nth-child(1) {
   left: 0;
